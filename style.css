@@ -32,9 +32,9 @@ h3 {font-weight: bolder; padding-bottom: 0.75em}
 
 /*FOOTER*/
 #page-footer * {text-decoration: none;color: white;}
-#page-footer {color: white;display: flex;flex-direction: column;background-image: linear-gradient(to bottom right, #222, #000);}
-.footer-content{ display: flex;flex-direction: column; justify-content: space-between;text-align: left;color: silver;}
-.footer-content div {width: 100%;}
+#page-footer {padding-left: 3em; color: white;display: flex;flex-direction: column;background-image: linear-gradient(to bottom right, #222, #000);}
+.footer-content{display: flex; flex-direction: column; justify-content: space-between; text-align: left; color: silver;}
+.footer-content div {width: 90%;}
 .footer-content ul * {opacity: 85%; padding-right: 0.2em}
 .footer-content ul a img {height: 20px;}
 .footer-content .title, b {color: white;font-weight: bold;}
@@ -52,7 +52,8 @@ form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
     .careers { font-size: 1.5em;}
 
     /*FOOTER*/
-    .footer-content {padding: 1em 5em 0 5em;text-align: left; display: flex; flex-direction: row;}
+    #page-footer{padding-left: 0}
+    .footer-content {padding: 1em 5em 0 5em; text-align: left; display: flex; flex-direction: row;}
     .footer-content div {width: 30%;}
-    .rights span:nth-of-type(2) {float: right;}
+    .rights span:nth-of-type(2) { float: right; }
 }
