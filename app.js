@@ -1,13 +1,9 @@
 // LOADER
-document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loading").style.visibility = "visible";
-    } else {
-        document.querySelector("#loading").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
-    }
-};
+const loader = document.querySelector('#loading')
+const load = () => { loader.style.visibility = 'visible'; document.body.style.visibility = 'hidden'}
+const timeout = () => { loader.style.visibility = 'hidden'; document.body.style.visibility = 'visible'}
+load();
+setTimeout(timeout, 1000);
 
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
