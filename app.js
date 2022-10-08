@@ -3,7 +3,7 @@ const loader = document.querySelector('#loading')
 const load = () => { loader.style.visibility = 'visible'; document.body.style.visibility = 'hidden'}
 const timeout = () => { loader.style.visibility = 'hidden'; document.body.style.visibility = 'visible'}
 load();
-setTimeout(timeout, 1000);
+setTimeout(timeout, 3000);
 
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
