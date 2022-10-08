@@ -1,5 +1,7 @@
 /*DOCUMENT SETUP*/
 body {margin: 0;padding: 0;font-family: "Raleway", sans-serif;}
+.container {font-family: "Montserrat", serif;}
+
 
 /*LOADER*/
 #loading {position: fixed;display: flex;justify-content: center;align-items: center;width: 100%;height: 100vh;top: 0;left: 0;opacity: 0.7;background-color: #fff;z-index: 99;}
@@ -11,7 +13,14 @@ body {margin: 0;padding: 0;font-family: "Raleway", sans-serif;}
 
 /*BANNER*/
 h1{color: white;}
-.banner-logo{ padding: 2em 1em}
+.banner-logo{ padding: 2em 1em 1em 1em}
+
+/*CONTENT*/
+article{text-align: center}
+h2{ line-height: 0.9em;text-align: center; font-family: "Montserrat", sans-serif;font-size: 0.65em; font-weight: bolder; text-transform: uppercase; padding-top: 3em; padding-bottom: 1em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}
+.columns { padding: 1em }
+.column p { font-weight: lighter}
+
 
 /*FOOTER*/
 #page-footer * {text-decoration: none;color: white;}
@@ -28,6 +37,10 @@ form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
 
 /*DESTKOP VIEW*/
 @media (min-width: 1080px) {
+    /*CONTENT*/
+    h2{ text-align: center; font-family: "Montserrat", sans-serif;font-size: 1.5em; font-weight: bolder; text-transform: uppercase; padding-top: 2em; padding-bottom: 0.5em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}
+    .columns { padding: 1em }
+    .column p { font-weight: lighter; }
 
     /*FOOTER*/
     .footer-content {padding: 1em 5em 0 5em;text-align: left; display: flex; flex-direction: row;}

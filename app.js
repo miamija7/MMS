@@ -3,7 +3,8 @@ const loader = document.querySelector('#loading')
 const load = () => { loader.style.visibility = 'visible'; document.body.style.visibility = 'hidden'}
 const timeout = () => { loader.style.visibility = 'hidden'; document.body.style.visibility = 'visible'}
 load();
-setTimeout(timeout, 3000);
+window.onload = function() {timeout();};
+
 
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
@@ -93,4 +94,28 @@ document.querySelector("#build-email").addEventListener('click', ()=> {
     window.open(`mailto:mmswichita@gmail.com?subject=${subject}&body=${body}`);
 })
 
+// ABOUT US
+let aboutUsBtn = document.querySelector('.about-us-btn');
+let aboutUsContent = document.querySelector('.about-us');
+aboutUsBtn.addEventListener('click', () => {
+    aboutUsContent.innerHTML = 'Michael Miller, founder of MMS, has served in Long Term Care and Assisted Living communities for over a decade. As CEO of a well-known senior living community, he faced the need for a quality medical staffing partner. <br><br>Noticing deficiencies in the quality of service that agencies provided, along with low compensation to their staff, he decided make a difference. He set course to build a medical staffing agency that does not just provide another \"warm body\" in the building, but rather an exceptional helping hand in time of need.<br><br>Miller Medical Staffing is raising the bar. We provide nothing less than exemplary services to our communities, and our staff receives great pay and exciting new opportunities!<br><br>"We are setting the bar with great pay and great rates. Nursing agencies are gouging Long Term Care and Assisted Living communities just to paying their employees less than half of what they charge. MMS is different. We pay well and do not gouge the communities that are taking care of our elders. We are committed to meeting all of your staffing needs, and go above and beyond to ensure you receive the best services available in the state of Kansas." <br><br>~ Michael Miller, Owner'
+    aboutUsBtn.style.visibility = 'hidden';
+})
 
+// SERVICES
+let servicesBtn= document.querySelector('.services-btn');
+let servicesContent = document.querySelector('.services');
+servicesBtn.addEventListener('click', () => {
+    servicesContent.innerHTML += `            
+            <div class="columns">
+                <div class="column">
+                    <h3>Licensed Practical Nurse</h3>
+                    <p>LPNs in this industry have a diverse set of skills to ensure residents needs are being met. You can expect an MMS LPN or LPN-IV to guide staff and use critical thinking to provide excellent care to residents.</p>
+                </div>
+                <div class="column">
+                    <h3>Registered Nurse</h3>
+                    <p>RNs are required in every LTC community because of their education and training. You can expect a MMS RN to be a high performer, staff guide, and medical leader.</p>
+                </div>
+            </div>`
+    servicesBtn.style.visibility = 'hidden';
+})
