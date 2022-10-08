@@ -41,7 +41,7 @@ h3 {font-weight: bolder; padding-bottom: 0.75em}
 form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
 .footer-content p {line-height: 2em;}
 .rights span {float: left;font-size: 0.75em;}
-.rights {padding: 0 2em 2em 2em;}
+.rights {padding: 0 2em 2em 0;}
 
 /*DESKTOP VIEW*/
 @media (min-width: 1080px) {
@@ -56,4 +56,5 @@ form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
     .footer-content {padding: 1em 5em 0 5em; text-align: left; display: flex; flex-direction: row;}
     .footer-content div {width: 30%;}
     .rights span:nth-of-type(2) { float: right; }
+    .rights {padding: 0 2em 2em 2em;}
 }
