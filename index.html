@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,51 +14,92 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="">
-<nav class="navbar is-black" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="#"><img src="./img/brand/MMS-Horizontal-Logo-White-Medium.png"></a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    <div id="main-nav" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item">Home</a>
-            <a class="navbar-item">About</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">Services</a>
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">Staffing Solutions</a>
-                    <a class="navbar-item">Careers</a>
+<body>
+<!--    Navbar      -->
+<div id="sticky-top">
+    <nav id="top-nav" class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#"><img src="./img/brand/MMS-Horizontal-Logo-White-Medium.png"></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="main-nav" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Home</a>
+                <a class="navbar-item">About</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Services</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">Staffing Solutions</a>
+                        <a class="navbar-item">Careers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <button id="contact-us" class="js-modal-trigger button is-black" data-target="email-modal">
+                            <span class="icon"><i class="fa-solid fa-paper-plane"></i></span>
+                            <span><strong>Contact Us</strong></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-black">
-                        <span class="icon"><i class="fa-solid fa-paper-plane"></i></span>
-                        <span><strong>Contact Us</strong></span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    </nav>
+    <!--    Notification      -->
+    <div id="notification" class="notification is-info">
+        <button class="delete"></button>
+        <strong>Welcome!</strong> We're hiring, Join our team! For staffing solutions reach out to using the contact link above!
     </div>
-</nav>
-
-<div class="notification is-primary is-light">
-    <button class="delete"></button>
-    <strong>Welcome!</strong> We're hiring, Join our team! For staffing solutions reach out to using the contact link above!</div>
-<div class="container">
-
 </div>
-
-<footer>
-    <section class="connect">
+<!--    Content      -->
+<div class="container">
+    <div>
+        <h1>Miller Medical Staffing</h1>
+        <img id="banner" src="./img/brand/MMS-Horizontal-Logo-Large.png" alt="Miller Medical Staffing">
+    </div>
+</div>
+<!--    Modal       -->
+<div id="email-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Contact Us</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="subject">
+                            <option>Staffing Solutions</option>
+                            <option>Employment Opportunities</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Type Your Message..."></textarea>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <button id="build-email" class="button is-info">Build Email</button>
+            <button class="button">Cancel</button>
+        </footer>
+    </div>
+</div>
+<!--    Footer      -->
+<footer id="page-footer">
+    <section class="footer-content">
         <div>
             <p class="title"><img src="./img/brand/MMS-Horizontal-Logo-White-Medium.png" width="200px" alt="Miller Medical Staffing"></p>
             <ul id="links">

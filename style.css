@@ -1,87 +1,26 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Raleway", sans-serif;
-}
+/*DOCUMENT SETUP*/
+body {margin: 0;padding: 0;font-family: "Raleway", sans-serif;}
 
-.navbar {
-    background-image: linear-gradient(to bottom right, #222, #000);
-}
-
+/*NAVBAR & NOTIFICATION*/
+#sticky-top {position: sticky;top: 0;z-index: 99;}
+.navbar {background-image: linear-gradient(to bottom right, #222, #000);}
 
 /*FOOTER*/
+#page-footer * {text-decoration: none;color: white;}
+#page-footer {color: white;display: flex;flex-direction: column;background-image: linear-gradient(to bottom right, #222, #000);}
+.footer-content{ display: flex;flex-direction: column; justify-content: space-between;text-align: left;color: silver;}
+.footer-content div {width: 100%;}
+.footer-content ul * {opacity: 85%; padding-right: 0.2em}
+.footer-content ul a img {height: 20px;}
+.footer-content .title, b {color: white;font-weight: bold;}
+form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
+.footer-content p {line-height: 2em;}
+.rights span {float: left;font-size: 0.75em;}
+.rights {padding: 0 2em 2em 2em;}
 
-footer * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: white;
-}
-
-footer {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to bottom right, #222, #000);
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.connect{
-    justify-content: space-between;
-    text-align: left;
-    padding-left: 2em;
-    color: silver;
-}
-.rights {
-    padding: 0 2em 1em 2em;
-}
-
-.connect div {
-    width: 30%;
-}
-
-.connect ul * {
-    opacity: 85%;
-    padding-right: 0.2em
-}
-
-.connect ul a img {
-    height: 20px;
-}
-
-.connect .title, b {
-    color: white;
-    font-weight: bold;
-}
-
-form, .title, .map, .connect ul {
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
-
-.connect p {
-    line-height: 2em;
-}
-
-.rights span {
-    float: left;
-    font-size: 0.75em;
-}
-
+/*DESTKOP VIEW*/
 @media (min-width: 1080px) {
-    section {
-        display: flex;
-        flex-direction: row;
-    }
-    .connect {
-        padding: 1em 5em;
-        text-align: left;
-    }
-    .rights span:nth-of-type(2) {
-        float: right;
-    }
+    .footer-content {padding: 1em 5em 0 5em;text-align: left; display: flex; flex-direction: row;}
+    .footer-content div {width: 30%;}
+    .rights span:nth-of-type(2) {float: right;}
 }
