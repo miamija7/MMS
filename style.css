@@ -17,8 +17,8 @@ h1{color: white;}
 
 /*CONTENT*/
 article{text-align: center}
-h2{ line-height: 0.9em;text-align: center; font-family: "Montserrat", sans-serif;font-size: 0.65em; font-weight: bolder; text-transform: uppercase; padding-top: 3em; padding-bottom: 1em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}
-.columns { padding: 1em }
+h2{ line-height: 0.9em;text-align: center; font-family: "Montserrat", sans-serif;font-size: 0.7em; font-weight: bolder; text-transform: uppercase; padding-top: 3em; padding-bottom: 1em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}
+.columns { padding: 1em; margin: 0}
 .column p { font-weight: lighter}
 h3 {font-weight: bolder; padding-bottom: 0.75em}
 .columns .column .columns {padding-top: 0;}
@@ -26,6 +26,9 @@ h3 {font-weight: bolder; padding-bottom: 0.75em}
 .column ul {padding: 1.5em 0; border-bottom: 1px solid lightgrey; margin-bottom: 1em}
 .column li {padding: 0.75em 0; font-weight: bolder; font-size: 1.25em}
 .column li span {display: block; font-size: 0.7em; font-weight: normal}
+.columns:nth-of-type(2){text-align: center}
+.columns:nth-of-type(2) p {font-size: 0.85em}
+.columns:nth-of-type(3){text-align: center}
 
 /*FOOTER*/
 #page-footer * {text-decoration: none;color: white;}
