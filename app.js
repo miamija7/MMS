@@ -5,6 +5,15 @@ const timeout = () => { loader.style.visibility = 'hidden'; document.body.style.
 load();
 window.onload = function() {timeout();};
 
+// NOTIFICATION
+const postLocation = document.querySelector('#post-notification');
+setTimeout(()=>{
+    postLocation.innerHTML += `
+        <div id="notification" class="notification is-info is-light">
+        <button class="delete"></button>
+        <strong>Welcome!</strong> We are hiring, join our team with the link below! For more information on staffing solutions, or further questions, reach out to using the contact link above!
+    </div>`
+}, 1000)
 
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,14 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // NOTIFICATION
-document.addEventListener('DOMContentLoaded', () => {
+setTimeout(() => {
     (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
         const $notification = $delete.parentNode;
         $delete.addEventListener('click', () => {
             $notification.parentNode.removeChild($notification);
         });
     });
-});
+}, 1100);
 
 // MODAL
 document.addEventListener('DOMContentLoaded', () => {
@@ -84,10 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
 let subjectField = document.querySelector("#subject");
 let bodyField = document.querySelector(".textarea");
 
-bodyField.addEventListener('keyup', (e) =>{
-    if (e.key === "Enter") { console.log('%0D%0A') }
-});
-
 document.querySelector("#build-email").addEventListener('click', ()=> {
     let subject = subjectField.options[subjectField.selectedIndex].text;
     let body = bodyField.value.split(/\r?\n|\r|\n/g).join('%0D%0A');
@@ -121,7 +126,7 @@ servicesBtn.addEventListener('click', () => {
 })
 
 // CAREERS
-let careersBtn = document.querySelector('.careers-btn');
-careersBtn.addEventListener('click', ()=>{
+let careers = document.querySelectorAll('.careers-btn, .apply-link');
+careers.forEach(link => link.addEventListener('click', ()=>{
     window.open('https://docs.google.com/forms/d/e/1FAIpQLSdh5rgBn5a-d9ajzPp3habdmJ3njUh0QYk_1yhT7oR2IWx7sg/viewform', '_blank').focus();
-})
+}));

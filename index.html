@@ -55,10 +55,7 @@
         </div>
     </nav>
     <!--    Notification      -->
-    <div id="notification" class="notification is-info is-light">
-        <button class="delete"></button>
-        <strong>Welcome!</strong> We are hiring, join our team with the link below! For more information on staffing solutions, or further questions, reach out to using the contact link above!
-    </div>
+    <div id="post-notification"></div>
 </div>
 <!--    Content      -->
 <div class="container">
@@ -121,7 +118,6 @@
         </div>
     </div>
 </div>
-
 <!--    Modal       -->
 <div id="email-modal" class="modal">
     <div class="modal-background"></div>
@@ -156,26 +152,26 @@
         </footer>
     </div>
 </div>
-
 <!--    Footer      -->
 <footer id="page-footer">
     <section class="footer-content">
         <div>
             <p class="title"><img src="./img/brand/MMS-Horizontal-Logo-White-Medium.png" width="200px" alt="Miller Medical Staffing"></p>
             <ul id="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Staffing Solutions</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Apply Today</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#solutions">Staffing Solutions</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a class="apply-link">Apply Today</a></li>
+                <li><a class="js-modal-trigger" data-target="email-modal">Contact Us</a></li>
             </ul>
         </div>
         <div>
             <p class="title">FIND US ON</p>
             <ul>
-                <li><a href="#"><img src="img/social-icons/facebook.png" alt="facebook"> Facebook</a></li>
-                <li><a href="#"><img src="img/social-icons/linkedin.png" alt="linkedin"> LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/MMSWichita" target="_blank"><img src="img/social-icons/facebook.png" alt="facebook"> Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/michael-miller-84302927/" target="_blank"><img src="img/social-icons/linkedin.png" alt="linkedin"> LinkedIn</a></li>
+                <li><a><img src="img/social-icons/email.png" alt="email"> mmswichita@gmail.com</a></li>
             </ul>
         </div>
         <div>
@@ -188,108 +184,6 @@
     </section>
     <p class="rights"><span>Created by Mia Evans Full Stack Dev</span><span>© Copyright. All rights reserved.</span></p>
 </footer>
-
-<!--    <section>-->
-<!--        <div class="Navigation">-->
-<!--            <a href=""><img class="Brand" src="img/brand/MMS-Horizontal-Logo-White-Medium.png" alt="MMS Home"></a>-->
-<!--            <a class="NavLink" href="">About</a>-->
-<!--            <a class="NavLink" href="">Services</a>-->
-<!--            <a class="NavLink" href="">Team</a>-->
-<!--            <a class="NavLink" href="">News</a>-->
-<!--            <a class="NavLink" href="">Contact</a>-->
-<!--        </div>-->
-
-<!--        <div class="Header">-->
-<!--            <div>-->
-<!--                <h1>Hi There!</h1>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <h1>Welcome, to</h1>-->
-<!--                <img class="HeaderPic" src="img/brand/MMS-Horizontal-Logo-Medium.png"-->
-<!--                    alt="Miller Medical Staffing.">-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <h1>Medical Staffing Solutions for Wichita, KS</h1>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-
-<!--    <section>-->
-<!--        <div class="Descriptor">-->
-<!--            <h2>WHAT WE BELIEVE IN</h2>-->
-<!--            <h3>Great pay for our staff.</h3>-->
-<!--            <h3>Great rates for our community.</h3>-->
-<!--        </div>-->
-
-<!--        <hr>-->
-
-<!--        <div class="grid">-->
-<!--            <div class="item1">-->
-<!--                <h2>ABOUT</h2>-->
-<!--                <h3>Who we are</h3>-->
-<!--                <p>Michael Miller, founder of MMS, has served in Long Term Care and Assisted Living communities for-->
-<!--                    over-->
-<!--                    a decade. As CEO of a well-known senior living community, he faced the need of a good medical-->
-<!--                    staffing partner. Noticing deficiencies in the quality of service that agencies provided, along-->
-<!--                    with-->
-<!--                    low compensation to their staff, he was inspired to make a change in the perception that agency-->
-<!--                    staff is just another "warm body" in the building. Miller Medical Staffing is raising the bar.-->
-<!--                    We-->
-<!--                    provide nothing less than exemplary services to our communities, and our team receives great pay-->
-<!--                    and-->
-<!--                    exciting new opportunities!</p>-->
-<!--                <a href=""><button>LEARN MORE</button></a>-->
-<!--            </div>-->
-<!--            <div class="item2">-->
-<!--                <img src="img/home/Michael-Miller.jpeg" alt="Photograph of Michael Miller">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="grid">-->
-<!--            <div class="item3">-->
-<!--                <img src="img/home/serving.jpg" alt="Serving Clients">-->
-<!--            </div>-->
-<!--            <div class="item4">-->
-<!--                <h2>TEAM</h2>-->
-<!--                <h3>What we do</h3>-->
-<!--                <p>Miller Medical Staffing exists to connect healthcare professionals with facilities in need of-->
-<!--                    extra support. We provide services for Long-Term Care & Assisted Living communities.</p>-->
-<!--                <a href=""><button>LEARN MORE</button></a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    <hr>-->
-
-<!--    <section class="newsstand">-->
-<!--        <div class="Descriptor">-->
-<!--            <h2>MORE ABOUT US</h2>-->
-<!--            <h3>Company News</h3>-->
-<!--        </div>-->
-<!--        <div class="news">-->
-<!--            <div class="news-item">-->
-<!--                <h3>Growth</h3>-->
-<!--                <h2>18 FEB 2022</h2>-->
-<!--                <p>We are growing at a good pace since launching about four weeks ago!-->
-<!--                    We have 2 contracts in place for our staff members and many more contracts out for review.-->
-<!--                    We've onboarded 8 amazing staff members and are still recruiting and hiring more! Apply now on-->
-<!--                    Indeed!-->
-<!--            </div>-->
-<!--            <div class="news-item">-->
-<!--                <h3>Happy Clients</h3>-->
-<!--                <h2>18 FEB 2022</h2>-->
-<!--                <p>Just completed another consultation for a local community, they could-->
-<!--                    save around $3,500 over the next two months just by partnering with Miller Medical Staffing!-->
-<!--                    If your community is interested in partnering with MMS, contact us today! ~Mike</p>-->
-<!--            </div>-->
-<!--            <div class="news-item">-->
-<!--                <h3>We're Hiring!</h3>-->
-<!--                <h2>6 JAN 2022</h2>-->
-<!--                <p>We are looking for excellent CNA, CMA, LPN, LPN-IV, & RN staff members to join our team. We will-->
-<!--                    service LTC/SNUs and Assisted Living communities in Wichita, KS. Apply through Indeed!-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
 <script src="app.js"></script>
 </body>
