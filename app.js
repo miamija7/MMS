@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// CONTACT US
+// CONTACT US FORM
 let subjectField = document.querySelector("#subject");
 let bodyField = document.querySelector(".textarea");
 
