@@ -20,7 +20,12 @@ article{text-align: center}
 h2{ line-height: 0.9em;text-align: center; font-family: "Montserrat", sans-serif;font-size: 0.65em; font-weight: bolder; text-transform: uppercase; padding-top: 3em; padding-bottom: 1em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}
 .columns { padding: 1em }
 .column p { font-weight: lighter}
-
+h3 {font-weight: bolder; padding-bottom: 0.75em}
+.columns .column .columns {padding-top: 0;}
+.careers { font-size: 2em; font-style: italic; font-weight: bolder; border-bottom: 1px solid lightgrey }
+.column ul {padding: 1.5em 0; border-bottom: 1px solid lightgrey; margin-bottom: 1em}
+.column li {padding: 0.75em 0; font-weight: bolder; font-size: 1.25em}
+.column li span {display: block; font-size: 0.7em; font-weight: normal}
 
 /*FOOTER*/
 #page-footer * {text-decoration: none;color: white;}
@@ -35,7 +40,7 @@ form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
 .rights span {float: left;font-size: 0.75em;}
 .rights {padding: 0 2em 2em 2em;}
 
-/*DESTKOP VIEW*/
+/*DESKTOP VIEW*/
 @media (min-width: 1080px) {
     /*CONTENT*/
     h2{ text-align: center; font-family: "Montserrat", sans-serif;font-size: 1.5em; font-weight: bolder; text-transform: uppercase; padding-top: 2em; padding-bottom: 0.5em; border-top: 1px solid lightgrey; margin: 2.5em 1em 1em;}

@@ -99,13 +99,14 @@ let aboutUsBtn = document.querySelector('.about-us-btn');
 let aboutUsContent = document.querySelector('.about-us');
 aboutUsBtn.addEventListener('click', () => {
     aboutUsContent.innerHTML = 'Michael Miller, founder of MMS, has served in Long Term Care and Assisted Living communities for over a decade. As CEO of a well-known senior living community, he faced the need for a quality medical staffing partner. <br><br>Noticing deficiencies in the quality of service that agencies provided, along with low compensation to their staff, he decided make a difference. He set course to build a medical staffing agency that does not just provide another \"warm body\" in the building, but rather an exceptional helping hand in time of need.<br><br>Miller Medical Staffing is raising the bar. We provide nothing less than exemplary services to our communities, and our staff receives great pay and exciting new opportunities!<br><br>"We are setting the bar with great pay and great rates. Nursing agencies are gouging Long Term Care and Assisted Living communities just to paying their employees less than half of what they charge. MMS is different. We pay well and do not gouge the communities that are taking care of our elders. We are committed to meeting all of your staffing needs, and go above and beyond to ensure you receive the best services available in the state of Kansas." <br><br>~ Michael Miller, Owner'
-    aboutUsBtn.style.visibility = 'hidden';
+    aboutUsBtn.style.display = 'none';
 })
 
 // SERVICES
-let servicesBtn= document.querySelector('.services-btn');
+let servicesBtn = document.querySelector('.services-btn');
 let servicesContent = document.querySelector('.services');
 servicesBtn.addEventListener('click', () => {
+    servicesBtn.style.display = 'none';
     servicesContent.innerHTML += `            
             <div class="columns">
                 <div class="column">
@@ -117,5 +118,10 @@ servicesBtn.addEventListener('click', () => {
                     <p>RNs are required in every LTC community because of their education and training. You can expect a MMS RN to be a high performer, staff guide, and medical leader.</p>
                 </div>
             </div>`
-    servicesBtn.style.visibility = 'hidden';
+})
+
+// CAREERS
+let careersBtn = document.querySelector('.careers-btn');
+careersBtn.addEventListener('click', ()=>{
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdh5rgBn5a-d9ajzPp3habdmJ3njUh0QYk_1yhT7oR2IWx7sg/viewform', '_blank').focus();
 })

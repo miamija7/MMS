@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a id="home"></a>
 <div id="loading">
     <img id="loading-image" src="img/spinner.gif" alt="Loading..." />
 </div>
@@ -31,13 +32,13 @@
         </div>
         <div id="main-nav" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">Home</a>
-                <a class="navbar-item">About</a>
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#about">About</a>
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">Services</a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">Staffing Solutions</a>
-                        <a class="navbar-item">Careers</a>
+                        <a class="navbar-item" href="#solutions">Staffing Solutions</a>
+                        <a class="navbar-item" href="#careers">Careers</a>
                     </div>
                 </div>
             </div>
@@ -69,21 +70,23 @@
         <h2>What We Believe</h2>
         <p>Great pay for our staff.</p>
         <p>Great rates for our community.</p>
+        <a id="about"></a>
     </article>
     <h2>ABOUT US</h2>
     <div class="columns">
         <div class="column">
-            <img src="img/home/Michael-Miller.jpeg" alt="Photograph of Michael Miller">
+            <img src="img/photos/Michael-Miller.jpeg" alt="Photograph of Michael Miller">
         </div>
         <div class="column">
-            <p class="about-us">Michael Miller, founder of MMS, has served in Long Term Care and Assisted Living communities for over a decade. As CEO of a well-known senior living community, he faced the need for a quality medical staffing partner. <br><br>Noticing deficiencies in the quality of service that agencies provided, along with low compensation to their staff, he decided make a difference. He set course to build a medical staffing agency that does not just provide another "warm body" in the building...</p>
+            <p class="about-us">Michael Miller, founder of MMS, has served in Long Term Care and Assisted Living communities for over a decade. As CEO of a well-known senior living community, he faced the need for a quality medical staffing partner...</p>
             <button class="about-us-btn button is-info is-light" style="width: 100%; margin:0.5em 0;">Read More...</button>
         </div>
     </div>
+    <a id="solutions"></a>
     <h2>Staffing Solutions</h2>
     <div class="columns">
         <div class="column">
-            <img src="img/home/serving.jpg" alt="Serving Clients">
+            <img src="img/photos/serving.jpg" alt="Serving Clients">
         </div>
         <div class="column services">
             <div class="columns">
@@ -97,6 +100,24 @@
                 </div>
             </div>
             <button class="services-btn button is-info is-light" style="width: 100%; margin:0.5em 0;">View All...</button>
+        </div>
+    </div>
+    <a id="careers"></a>
+    <h2>Careers</h2>
+    <div class="columns">
+        <div class="column">
+            <img src="img/photos/nurse.png" alt="nurse employee">
+        </div>
+        <div class="column">
+            <p class="careers">Join Our Growing Team!</p>
+            <ul>
+                <li>Certified Nurse Aide <span class="pay">$17/hr</span></li>
+                <li>Certified Medication Aide <span class="pay">$19/hr</span></li>
+                <li>Licensed Practical Nurse <span class="pay">$29/hr</span></li>
+                <li>Licensed Practical Nurse - IV Certified <span class="pay">$35/hr</span></li>
+                <li>Registered Nurse <span class="pay">$40/hr</span></li>
+            </ul>
+            <button class="careers-btn button is-primary" style="width: 100%; margin:0.5em 0;">Apply Now!</button>
         </div>
     </div>
 </div>
