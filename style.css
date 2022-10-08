@@ -11,7 +11,7 @@ body {margin: 0;padding: 0;font-family: "Raleway", sans-serif;}
 
 /*BANNER*/
 h1{color: white;}
-.banner-logo{ padding: 2em 0}
+.banner-logo{ padding: 2em 1em}
 
 /*FOOTER*/
 #page-footer * {text-decoration: none;color: white;}
@@ -28,6 +28,8 @@ form, .title, .map, .footer-content ul {margin-bottom: 2em;margin-top: 1em;}
 
 /*DESTKOP VIEW*/
 @media (min-width: 1080px) {
+
+    /*FOOTER*/
     .footer-content {padding: 1em 5em 0 5em;text-align: left; display: flex; flex-direction: row;}
     .footer-content div {width: 30%;}
     .rights span:nth-of-type(2) {float: right;}
