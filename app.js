@@ -18,7 +18,7 @@ setTimeout(()=>{
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
     // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger, .navbar-item, #contact-us'), 0);
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger, .navbar-item'), 0);
     const $navbarButtons = document.querySelector('#contact-us');
     // Add a click event on each of them
     $navbarBurgers.forEach( el => {
