@@ -11,7 +11,7 @@ setTimeout(()=>{
     postLocation.innerHTML += `
         <div id="notification" class="notification is-info is-light">
         <button class="delete"></button>
-        <strong>Welcome!</strong> We are hiring, join our team with the link below! For more information on staffing solutions, or further questions, reach out to using the contact link above!
+        <strong>Welcome!</strong> We are hiring, join our team with the link below! For more information on staffing solutions, or further questions, reach out using the contact link above!
     </div>`
 }, 1000)
 
