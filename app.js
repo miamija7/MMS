@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $navbarBurgers.forEach( el => {
         el.addEventListener('click', () => {
             // Get the target from the "data-target" attribute
+            el = document.querySelector('.navbar-burger');
             const target = document.querySelector('.navbar-burger').dataset.target;
             const $target = document.getElementById(target);
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
