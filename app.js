@@ -5,16 +5,6 @@ const timeout = () => { loader.style.visibility = 'hidden'; document.body.style.
 load();
 window.onload = function() {timeout();};
 
-// NOTIFICATION
-const postLocation = document.querySelector('#post-notification');
-setTimeout(()=>{
-    postLocation.innerHTML += `
-        <div id="notification" class="notification is-info is-light">
-        <button class="delete"></button>
-        <strong>Welcome!</strong> We are hiring, join our team with the link below! For more information on staffing solutions, or further questions, reach out to us using the contact link above!
-    </div>`
-}, 1000)
-
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
     // Get all "navbar-burger" elements
